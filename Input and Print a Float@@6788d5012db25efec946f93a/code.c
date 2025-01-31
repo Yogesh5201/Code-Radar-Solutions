@@ -7,6 +7,6 @@
 int main() {
     int number;
     scanf("%f",&number);
-    printf("%f",number);
+    printf("You entered: %f",number);
     return 0;
 }

@@ -8,7 +8,7 @@ int main() {
     int a;
     scanf("%d",&a);
     char s=(char)a;
-    char b=s[0];
+    char b=s;
     int c=(int)b;
     if(c%2==0){
         printf("Set");

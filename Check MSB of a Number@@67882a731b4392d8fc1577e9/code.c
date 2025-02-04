@@ -9,7 +9,7 @@ int main() {
     scanf("%d",&a);
     char s=(char)a;
     char b=s[0];
-    int c=(int)b
+    int c=(int)b;
     if(c%2==0){
         printf("Set");
     }else{

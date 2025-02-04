@@ -7,6 +7,6 @@ int main() {
     scanf("%d",&a);
 
     printf("%c",a);
-    printf("%x",a)
+    printf("%x",a);
     return 0;
 }

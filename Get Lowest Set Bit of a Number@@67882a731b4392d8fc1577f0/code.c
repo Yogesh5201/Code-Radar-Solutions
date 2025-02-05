@@ -7,10 +7,7 @@ char* welcome() {
 int main() {
    int num;
    scanf("%d",&num);
-   if(num%2==0){
-    printf("1");
-   }else{
-    printf("0");
-   }
+   int lsb=num&-num
+   printf("%d",lsb);
     return 0;
 }

@@ -7,8 +7,8 @@ char* welcome() {
 int main() {
     int a;
     scanf("%d",&a);
-    if(num<0){
-        num=-num;
+    if(a < 0){
+        a=-a;
     }
     while(a>=10){
         a=a/10;

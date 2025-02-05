@@ -8,6 +8,12 @@ int main() {
    int num;
    scanf("%d",&num);
    int lsb= num & -num;
-   printf("%d",lsb);
+   int position=0;
+   while(lsb>1){
+    lsb=lsb>>1;
+    position++
+    }
+
+   printf("%d",position);
     return 0;
 }

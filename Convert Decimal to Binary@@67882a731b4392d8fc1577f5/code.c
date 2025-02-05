@@ -14,6 +14,6 @@ int main() {
     if(num==0){
         printf("0");
         }else {decimal_to_binary(num);}
-    printf("\n")    
+    printf("\n");  
     return 0;
 }

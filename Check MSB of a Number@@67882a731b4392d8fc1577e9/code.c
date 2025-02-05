@@ -13,7 +13,7 @@ int main() {
     while(a>=10){
         a=a/10;
     }
-    if(a>=5){
+    if(a!=0){
         printf("Set");
     }
     else{

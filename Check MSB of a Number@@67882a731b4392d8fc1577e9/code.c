@@ -7,12 +7,13 @@ char* welcome() {
 int main() {
     int a;
     scanf("%d",&a);
-    char s=(char)a;
-    char b=s;
-    int c=(int)b;
-    if(c%2==0){
+    while(a>=10){
+        a=a/10;
+    }
+    if(a%2==0){
         printf("Set");
-    }else{
+    }
+    else{
         printf("Not Set");
     }
     return 0;

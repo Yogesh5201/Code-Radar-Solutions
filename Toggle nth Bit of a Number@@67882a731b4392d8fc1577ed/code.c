@@ -9,6 +9,6 @@ int main() {
     scanf("%d %d",&num,&n);
     int mask=1<<n;
     num=num^mask;
-    print("%d",num);
+    printf("%d",num);
     return 0;
 }

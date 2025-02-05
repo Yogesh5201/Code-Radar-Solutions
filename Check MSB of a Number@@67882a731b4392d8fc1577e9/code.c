@@ -7,13 +7,8 @@ char* welcome() {
 int main() {
     int a;
     scanf("%d",&a);
-    if(a < 0){
-        a=-a;
-    }
-    while(a>=10){
-        a=a/10;
-    }
-    if(a!=0){
+    int msb_mask=1<<31;
+    if(a & msb_mask){
         printf("Set");
     }
     else{

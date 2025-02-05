@@ -11,7 +11,7 @@ int main() {
    int position=0;
    while(lsb>1){
     lsb=lsb>>1;
-    position++
+    position++;
     }
 
    printf("%d",position);

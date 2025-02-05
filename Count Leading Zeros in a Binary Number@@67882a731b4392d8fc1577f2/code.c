@@ -7,7 +7,7 @@ char* welcome() {
 int main() {
     int num;
     scanf("%d",&num);
-    int leading_zeroes=_builtin_clz(num);
+    int leading_zeroes=__builtin_clz(num);
     printf("%d",leading_zeroes);
     return 0;
 }

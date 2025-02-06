@@ -5,16 +5,16 @@ char* welcome() {
 }
 
 int main() {
-    int a,b,c;
+    int a,b,c,max;
     scanf("%d %d %d",&a,&b,&c);
     if(a>b && a>c){
-        int max=a;
+         max=a;
     }
     else if(b>a && b>c){
-        int max=b;
+        max=b;
     }
     else if(c>b && c>a){
-        int max=c;
+         max=c;
     }
     printf("%d",max);
     return 0;

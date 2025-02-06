@@ -13,6 +13,8 @@ int main() {
         }else{
             printf("Consonant");
         }
+    }else{
+        printf("Digit");
     }
     return 0;
 }

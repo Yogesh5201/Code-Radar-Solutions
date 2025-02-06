@@ -7,6 +7,7 @@ char* welcome() {
 int main() {
     char alphabet;
     scanf("%c",&alphabet);
+    alphabet=tolower(alphabet);
     if(alphabet>='a' && alphabet<='z'){
         if(alphabet=='a' || alphabet=='e' || alphabet=='i' || alphabet=='o' || alphabet=='u'){
             printf("Vowel");

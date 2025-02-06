@@ -10,7 +10,10 @@ int main() {
     scanf("%c",&alphabet);
     if(isupper(alphabet)){
         printf("Uppercase");
-    }else{
+    }else if(isdigit(alphabet)){
+        printf("Not an alphabet");
+    }
+    else{
         printf("Lowercase");
     }
     return 0;

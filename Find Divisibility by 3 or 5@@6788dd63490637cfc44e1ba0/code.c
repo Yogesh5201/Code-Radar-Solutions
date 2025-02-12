@@ -13,6 +13,6 @@ int main(){
         printf("Divisible by 3");
     }
     else{
-        printf("Not Diviisible");
+        printf("Not Divisible");
     }
 }

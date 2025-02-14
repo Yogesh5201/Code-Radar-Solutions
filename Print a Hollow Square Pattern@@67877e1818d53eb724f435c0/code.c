@@ -5,10 +5,10 @@ int main(){
     scanf("%d",&a);
     for(int i=0;i<a;i++){
         for(int j=0;j<a;j++){
-        if(j==1||a==j+1){
-            printf("*    ");
+        if(i==1||j==1||i==a-1||j==i-1){
+            printf("*");
         }else{
-            printf("");
+            printf(" ");
         }
     } printf("\n");
     }

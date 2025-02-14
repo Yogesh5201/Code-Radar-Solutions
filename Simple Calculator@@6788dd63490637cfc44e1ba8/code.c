@@ -14,7 +14,7 @@ int main(){
         printf("%d",a*b);
     }
     else if(c=='/'){
-        printf("%d",(int)a/b);
+        printf("%d",a/b);
     }
     return 0;
 }

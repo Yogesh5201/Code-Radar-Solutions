@@ -3,7 +3,10 @@
 int main(){
     int a;
     scanf("%d",&a);
-    if(a%2==0){
+    if(a>12){
+        printf("Invalid month");
+    }else{
+        if(a%2==0){
         if(a==2){
             printf("28");
         }else{
@@ -12,6 +15,7 @@ int main(){
     }
     else{
         printf("31");
+    }
     }
     return 0;
 }

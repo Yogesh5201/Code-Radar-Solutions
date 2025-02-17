@@ -19,7 +19,7 @@ int main() {
     }else if(isdigit(a)){
         printf("Digit");
     }else{
-        printf("Special character");
+        printf("Special Character");
     }
     return 0;
 }

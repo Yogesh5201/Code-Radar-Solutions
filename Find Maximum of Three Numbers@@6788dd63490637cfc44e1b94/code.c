@@ -17,7 +17,7 @@ int main() {
         max=c;
     }
     else if(a==b&&b==c&&c==a){
-        printf("%d",max);
+       max=a;
     }
     printf("%d",max);
     

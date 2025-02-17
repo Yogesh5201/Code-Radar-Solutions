@@ -8,9 +8,9 @@ char* welcome() {
 int main() {
     char alphabet;
     scanf("%c",&alphabet);
-    if(isupper(alphabet)){
+    if(a>='A'&&a<='Z'){
         printf("Uppercase");
-    }else if(islower(alphabet)){
+    }else if(a>='a'&&a<='z'){
         printf("Lowercase");
     }else{
         printf("Not an alphabet");

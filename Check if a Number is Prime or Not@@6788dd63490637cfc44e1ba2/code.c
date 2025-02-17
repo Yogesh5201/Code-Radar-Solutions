@@ -8,7 +8,7 @@ int main(){
     is_prime=0;
    }else{
     for(int i;i*i>a;i++){
-        if(a%i==0){
+        if(i%a==0){
             is_prime=0;
         }
     }

@@ -7,13 +7,13 @@ char* welcome() {
 int main() {
     int a,b,c,max;
     scanf("%d %d %d",&a,&b,&c);
-    if(a>b||a>c){
+    if(a>b&&a>c){
         max=a;
     }
-    else if(b>c||b>a){
+    else if(b>c&&b>a){
         max=b;
     }
-    else if(c>a||c>b){
+    else if(c>a&&c>b){
         max=c;
     }
     else if(a==b&&b==c&&c==a){

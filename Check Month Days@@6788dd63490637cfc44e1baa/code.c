@@ -7,6 +7,6 @@ int main(){
     }else if(a==2){
         printf("28");
     }else{
-        printf("31");
+        printf("30");
     }
 }

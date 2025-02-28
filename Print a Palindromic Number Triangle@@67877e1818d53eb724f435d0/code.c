@@ -9,6 +9,11 @@ int main(){
         }
         for(int j=1;j<=i;j++){
             printf("%d",j);
-        }printf("\n");
+        }
+        for(int j=i;j>=0;j--){
+            printf("%d",j);
+        }
+        printf("\n");
+
     }
 }

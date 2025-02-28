@@ -1,6 +1,6 @@
 // Your code here...
 void isPrime(int num){
-    isPrime=1;
+    int isPrime=1;
     if(num<=1){
         isPrime=0;
     }

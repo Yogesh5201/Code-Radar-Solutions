@@ -3,11 +3,12 @@
 int main(){
     int n;
     scanf("%d",&n);
+    int a;
     for(int i=1;i<=n;i++){
         
-        for(int j=i;j<i+i;j++){
+        for(int j=a;j<i+i;j++){
             printf("%d ",j);
-            int a=j;
+             a=j;
         }
         
         printf("\n");

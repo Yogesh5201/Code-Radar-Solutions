@@ -2,11 +2,12 @@
 #include<stdio.h>
 int main(){
     int n;
+    int j=0;
     scanf("%d",&n);
     
     for(int i=1;i<=n;i++){
         
-        for(int j=j+i;j<i+i;j++){
+        for(j=j+i;j<i+i;j++){
             printf("%d ",j);
              
         }

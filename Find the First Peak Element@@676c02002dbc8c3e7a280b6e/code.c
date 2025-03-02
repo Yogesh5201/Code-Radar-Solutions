@@ -11,7 +11,10 @@ int main(){
         if(arr[i]>arr[i-1] &&arr[i]>arr[i+i]){
             printf("%d",arr[i]);
             break;
-        }else{
+        }else if(arr[i]==arr[i+1] || arr[i]==arr[i-1]){
+            printf("-1");
+        }
+        else{
             continue;
         }
     }

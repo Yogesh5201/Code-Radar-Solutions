@@ -23,7 +23,7 @@ int main(){
             }
             
            
-        } printf("%d  %d",arr[i],frequency);
+        } printf("%d  %d\n",arr[i],frequency);
     }
     
 }

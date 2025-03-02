@@ -13,8 +13,9 @@ int main(){
             if(arr[i]==arr[j]){
                 frequency+=1;
             }
-            printf("%d %d",arr[i],frequency);
-        }
+            
+           
+        } printf("%d %d",arr[i],frequency);
     }
     
 }

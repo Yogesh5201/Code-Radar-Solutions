@@ -7,6 +7,9 @@ int main(){
         printf("-1\n"); 
         return 0;
     }
+    
+   
+    
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
@@ -21,5 +24,9 @@ int main(){
         } else if (arr[i] > second_max && arr[i] != max) {
             second_max=arr[i];
         }
-    }printf("%d",second_max);
+    }if (second_max == INT_MIN) {
+        printf("-1\n"); // No second maximum exists
+    } else {
+        printf("%d\n", second_max);
+    }
 }

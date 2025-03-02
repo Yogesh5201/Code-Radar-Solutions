@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int a;
-    scanf("a",&a);
+    scanf("d",&a);
     
     for(int i=0;i<n;i++){
         if(i<n-a-1){

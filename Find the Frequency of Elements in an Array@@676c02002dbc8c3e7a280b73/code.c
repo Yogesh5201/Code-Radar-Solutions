@@ -13,6 +13,7 @@ int main(){
     
     for(int i=0;i<n;i++){
         int frequency=1;
+        count[i]=1;
         if(count[i]==1){
             continue;
         }

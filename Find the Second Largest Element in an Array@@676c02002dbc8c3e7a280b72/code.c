@@ -4,10 +4,10 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&arr[n]);
+        scanf("%d",&arr[i]);
     }
     int max=arr[0];
-    int second_max=-16958339;
+    int second_max=-169;
     for(int i=0;i<n;i++){
         if(arr[i]>max){
             max=arr[i];

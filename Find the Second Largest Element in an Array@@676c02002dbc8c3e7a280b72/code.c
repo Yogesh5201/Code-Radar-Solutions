@@ -10,8 +10,9 @@ int main(){
     int second_max=-169;
     for(int i=0;i<n;i++){
         if(arr[i]>max){
-            max=arr[i];
+            
             second_max=max;
+            max=arr[i];
         } else if (arr[i] > second_max && arr[i] != max) {
             second_max=arr[i];
         }

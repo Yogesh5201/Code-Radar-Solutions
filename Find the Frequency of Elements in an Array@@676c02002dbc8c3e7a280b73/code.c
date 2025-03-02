@@ -13,13 +13,13 @@ int main(){
     
     for(int i=0;i<n;i++){
         int frequency=1;
-        if(count[i]){
+        if(count[i]==1){
             continue;
         }
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 frequency+=1;
-                count[j]=arr[j];
+                count[i]=1;
             }
             
            

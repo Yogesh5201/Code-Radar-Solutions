@@ -15,10 +15,10 @@ int main(){
              printf("%d",arr[i-1]);
             break;
         }
-        }else if((arr[i+1]>arr[i] &&arr[i+1]>arr[i-i])){
+        else if((arr[i+1]>arr[i] &&arr[i+1]>arr[i-i])){
              printf("%d",arr[i+1]);
-            break;
-        }
+            break;}
+        
         else if(arr[i]==arr[i+1] || arr[i]==arr[i-1]){
             printf("-1");
             break;

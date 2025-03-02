@@ -12,6 +12,8 @@ int main(){
         if(arr[i]>max){
             max=arr[i];
             second_max=max;
+        }else{
+            second_max=arr[i];
         }
     }printf("%d",second_max);
 }

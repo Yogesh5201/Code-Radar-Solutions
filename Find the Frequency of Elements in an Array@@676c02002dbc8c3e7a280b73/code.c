@@ -19,7 +19,7 @@ int main(){
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 frequency+=1;
-                count[i]=1;
+                count[j]=1;
             }
             
            

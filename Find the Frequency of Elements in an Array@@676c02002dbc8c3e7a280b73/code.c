@@ -6,10 +6,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int count[n];
     for(int i=0;i<n;i++){
        count[i]=0;
     }
-    int count[n];
+    
     for(int i=0;i<n;i++){
         int frequency=1;
         if(count[i]){

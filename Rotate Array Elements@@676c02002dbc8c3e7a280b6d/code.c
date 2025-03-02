@@ -10,7 +10,11 @@ int main(){
     scanf("a",&a);
     
     for(int i=0;i<n;i++){
-        arr[i]=arr[i+a];
+        if(i<n-a-1){
+        arr[i]=arr[i+a];}
+        else{
+            arr[i]=arr[i-2-1];
+        }
     }
 
     for(int i=0;i<n;i++){

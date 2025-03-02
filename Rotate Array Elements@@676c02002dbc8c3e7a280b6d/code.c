@@ -10,7 +10,7 @@ int main(){
     scanf("a",&a);
     
     for(int i=0;i<n;i++){
-        arr[i]=arr[i+2];
+        arr[i]=arr[i+a];
     }
 
     for(int i=0;i<n;i++){

@@ -12,7 +12,7 @@ int main(){
         temp[i]=arr[n-k];
     }
     for(int i=0;i<n;i++){
-        printf("%d",temp[i])
+        printf("%d",temp[i]);
     }
     return 0;
 }

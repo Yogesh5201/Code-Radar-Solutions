@@ -12,8 +12,8 @@ int main(){
         temp[i] = arr[n - k + i];  
     }
 
-    for (int i = a; i < n; i++) {
-        temp[i] = arr[i - a];  
+    for (int i = k; i < n; i++) {
+        temp[i] = arr[i - k];  
     }
     for(int i=0;i<n;i++){
         printf("%d",temp[i]);

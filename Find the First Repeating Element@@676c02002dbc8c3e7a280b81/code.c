@@ -10,8 +10,8 @@ int main(){
     int max=0;
     int max_count=0;
     for(int i=0;i<n;i++){
-       for(int j=1;j<n;j++){
-       if(arr[i]==arr[j]){
+       for(int j=i+1;j<n;j++){
+       if(arr[i]===arr[j]){
         count=count+1;
        }
     }if(count>max_count){

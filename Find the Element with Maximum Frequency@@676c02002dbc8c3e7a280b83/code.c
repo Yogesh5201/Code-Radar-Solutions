@@ -1,42 +1,26 @@
 #include <stdio.h>
+#define MAX 10001 // Assuming array values are within this range
 
 int main() {
     int n;
     scanf("%d", &n);
-    int arr[n];
+    int arr[n], freq[MAX] = {0};
 
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
+        freq[arr[i]]++;
     }
 
-    int max = arr[0], max_count = 0;
-    int second_max = -1, second_max_count = 0;
+    int max_count = 0;
+    int result = -1;
 
-    for (int i = 0; i < n; i++) {
-        int count = 0;  
-
-        
-        for (int j = 0; j < n; j++) {
-            if (arr[i] == arr[j]) {
-                count++;
-            }
-        }
-
-       
-        if (count > max_count) {
-            second_max = max;
-            second_max_count = max_count;
-
-            max = arr[i];
-            max_count = count;
-        } 
-        
-        else if (count > second_max_count && arr[i] != max) {
-            second_max = arr[i];
-            second_max_count = count;
+    for (int i = 0; i < MAX; i++) {
+        if (freq[i] > max_count) {
+            max_count = freq[i];
+            result = i;
         }
     }
 
-    printf("%d", second_max);
+    printf("%d", result);
     return 0;
 }

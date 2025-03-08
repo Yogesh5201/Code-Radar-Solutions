@@ -24,6 +24,18 @@ int main(){
        else if(arr[i]==5){
         count++;
        }
+       else if(arr[i]==6){
+        count++;
+       }
+       else if(arr[i]==7){
+        count++;
+       }
+       else if(arr[i]==8){
+        count++;
+       }
+       else if(arr[i]==9){
+        count++;
+       }
     }
     printf("%d",count);
 

@@ -9,7 +9,7 @@ int main(){
     int max = arr[0], max_count = 0;
     int second_max = -1, second_max_count = 0;
     for(int i=0;i<n;i++){
-        int count=1;
+        int count=0;
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;

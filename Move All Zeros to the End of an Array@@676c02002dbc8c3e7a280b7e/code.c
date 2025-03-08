@@ -15,7 +15,7 @@ int main(){
     }
     while(index<n){
         arr[index]=0;
-        index++
+        index++;
     }
     for(int i=0;i<n;i++){
        printf("%d ",arr[i]);

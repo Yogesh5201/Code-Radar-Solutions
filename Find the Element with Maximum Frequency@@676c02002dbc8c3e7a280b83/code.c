@@ -29,7 +29,6 @@ int main(){
         }
     }
         }
-    }
-    printf("%d",second_max);
     
-}
+    printf("%d",second_max);}
+    

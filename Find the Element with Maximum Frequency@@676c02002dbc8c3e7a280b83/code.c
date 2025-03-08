@@ -27,11 +27,9 @@ int main(){
         count++;
     }
    }
-   if(count>n/2){
+   
     printf("%d",candidate);
-   }else{
-    printf("-1");
-   }
+   
     
     
     

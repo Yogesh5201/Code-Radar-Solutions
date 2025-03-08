@@ -12,11 +12,15 @@ int main(){
         if(a<=1){
             continue;
         }else{
+            int isprime=1
             for(int i=2;i*i<a;i++){
                 if(a%i==0){
-                    continue;
+                    isprime=0;
+                    break;
                 }
-            }count++;
+            }if(isprime){
+                count++;
+            }
         }
     }
     printf("%d",count);

@@ -36,6 +36,12 @@ int main(){
        else if(arr[i]==9){
         count++;
        }
+       else if(arr[i]==0){
+        count++;
+       }
+       else if(arr[i]==-1){
+        count++;
+       }
     }
     printf("%d",count);
 

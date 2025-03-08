@@ -21,7 +21,18 @@ int main(){
             count=1;
         }
     }
+   count=0;
+   for(int i=0;i<n;i++){
+    if(candidate==arr[i]){
+        count++;
+    }
+   }
+   if(count>n/2){
     printf("%d",candidate);
+   }else{
+    printf("-1");
+   }
+    
     
     
 }

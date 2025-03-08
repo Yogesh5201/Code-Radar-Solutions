@@ -2,7 +2,7 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int arr[n],new[n];
+    int arr[n],sumarr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
@@ -13,9 +13,9 @@ int main(){
             sum+=a%10;
             a=a/10;
         }
-        new[i]=sum;
+        sumarr[i]=sum;
     }
     for(int i=0;i<n;i++){
-        printf("%d",new[i]);
+        printf("%d ",sumarr[i]);
     }
 }

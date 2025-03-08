@@ -15,7 +15,9 @@ int main(){
                 count++;
                 
             }
-             if(count > max_count) {
+            
+    }
+     if(count > max_count) {
             second_max = max;           
             second_max_count = max_count;
 
@@ -27,7 +29,6 @@ int main(){
             second_max = arr[i];
             second_max_count = count;
         }
-    }
         }
     
     printf("%d",second_max);}

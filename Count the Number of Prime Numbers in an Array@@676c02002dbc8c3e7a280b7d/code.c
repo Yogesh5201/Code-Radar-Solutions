@@ -15,10 +15,8 @@ int main(){
             for(int i=2;i*i<a;i++){
                 if(a%i==0){
                     continue;
-                }else{
-                    count++;
                 }
-            }
+            }count++;
         }
     }
     printf("%d",count);

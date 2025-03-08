@@ -12,6 +12,10 @@ int main(){
        if(arr[i]==1){
         count++;
        }
+       else if(arr[i]==arr[i+1]){
+        count++;
+        break;
+       }
        else if(arr[i]==2){
         count++;
        }

@@ -15,5 +15,5 @@ int main(){
         }else{
             continue;
         }
-    }printf("-1");
+    }
 }

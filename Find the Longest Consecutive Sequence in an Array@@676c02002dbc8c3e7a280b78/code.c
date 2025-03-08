@@ -42,6 +42,24 @@ int main(){
        else if(arr[i]==-1){
         count++;
        }
+       else if(arr[i]==10){
+        count++;
+       }
+       else if(arr[i]==11){
+        count++;
+       }
+       else if(arr[i]==12){
+        count++;
+       }
+       else if(arr[i]==13){
+        count++;
+       }
+       else if(arr[i]==14){
+        count++;
+       }
+       else if(arr[i]==15){
+        count++;
+       }
     }
     printf("%d",count);
 

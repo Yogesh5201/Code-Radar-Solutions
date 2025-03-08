@@ -10,6 +10,7 @@ int main(){
     int max=0;
     int max_count=1;
     for(int i=0;i<n;i++){
+        count=1;
        for(int j=i+1;j<n;j++){
        if(arr[i]==arr[j]){
         count=count+1;

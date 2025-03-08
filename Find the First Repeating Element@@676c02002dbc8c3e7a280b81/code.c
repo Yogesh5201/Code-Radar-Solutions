@@ -20,8 +20,10 @@ int main(){
         max=arr[i];
     }
 
-    }
-    printf("%d",max);
+    }if(max_coount==0){
+        printf("-1");
+    }else{
+    printf("%d",max);}
 
     return 0;
 }

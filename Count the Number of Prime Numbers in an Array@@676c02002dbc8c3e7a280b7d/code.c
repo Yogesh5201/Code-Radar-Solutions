@@ -12,7 +12,7 @@ int main(){
         if(a<=1){
             continue;
         }else{
-            int isprime=1
+            int isprime=1;
             for(int i=2;i*i<=a;i++){
                 if(a%i==0){
                     isprime=0;

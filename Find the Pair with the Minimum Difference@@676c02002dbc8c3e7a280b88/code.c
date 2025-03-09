@@ -8,8 +8,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int a,b;
-    int min=arr[0]-arr[1];
-    for(int i=1;i<n;i++){
+    int min = abs(arr[0] - arr[1]);
+    for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(abs(arr[i]-arr[j])<min){
                 min=abs(arr[i]-arr[j]);

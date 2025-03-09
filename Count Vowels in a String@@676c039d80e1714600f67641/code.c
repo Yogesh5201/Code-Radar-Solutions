@@ -7,9 +7,9 @@ int main(){
     int count=0;
     for(int i=0;i<n;i++){
         int a=str[i];
-        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')(
+        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'){
             count++;
-        )
+    }
     }
     printf("%d",count);
 }

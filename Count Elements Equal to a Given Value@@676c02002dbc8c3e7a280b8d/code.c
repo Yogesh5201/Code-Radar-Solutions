@@ -11,7 +11,7 @@ int main(){
    
     int count=0;
     for(int i=0;i<n;i++){
-        if (arr[i]=a){
+        if (arr[i]==a){
             count++;
         }
     }

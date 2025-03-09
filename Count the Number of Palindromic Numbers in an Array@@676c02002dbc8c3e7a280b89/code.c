@@ -11,7 +11,7 @@ int main(){
         int a=arr[i];
         int rev=1;
         count=0;
-        while(i>0){
+        while(a>0){
             rev=(rev*10)+a%10;
             a=a/10;
         }

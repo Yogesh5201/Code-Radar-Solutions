@@ -8,7 +8,7 @@ int main(){
     int n=strlen(str);
     int count=0;
     for(int i=0;i<n;i++){
-       rev[i]=str[n-i-1]
+       rev[i]=str[n-i-1];
     }
     if(rev==str){
         printf("YES");

@@ -14,7 +14,7 @@ int main(){
     if(strcmp(rev, str) == 0){
         printf("Yes");
     }else{
-        printf("N");
+        printf("No");
     }
 
     

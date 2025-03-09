@@ -10,6 +10,7 @@ int main(){
     for(int i=0;i<n;i++){
        rev[i]=str[n-i-1];
     }
+    rev[n] = '\0';
     if(strcmp(rev, str) == 0){
         printf("YES");
     }else{

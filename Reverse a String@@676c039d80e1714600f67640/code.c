@@ -7,7 +7,7 @@ int main(){
     for(int i=0;i<n;i++){
         char temp=str[i];
         str[i]=str[n-1];
-        str[n-1]=temp
+        str[n-1]=temp;
     }
     printf("%s",str);
 }

@@ -6,11 +6,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int count;
+    int count=0;
     for(int i=0;i<n;i++){
         int a=arr[i];
-        int rev=1;
-        count=0;
+        int rev=0;
         while(a>0){
             rev=(rev*10)+a%10;
             a=a/10;

@@ -8,7 +8,7 @@ int main(){
     }
     int inc=0;
     int dec=0;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         if(arr[i]<=arr[i+i]){
             inc=1;
         }if(arr[i]>=arr[i+i]){

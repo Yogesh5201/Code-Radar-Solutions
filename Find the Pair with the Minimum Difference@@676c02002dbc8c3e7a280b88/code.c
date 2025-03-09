@@ -20,14 +20,18 @@ int main() {
     }
     int a = arr[0], b = arr[1];
     int min = abs(arr[1] - arr[0]);
-
-    for (int i = 1; i < n - 1; i++) {
+    if(n<=1){
+        printf("-1");
+    }else{
+        for (int i = 1; i < n - 1; i++) {
         if (abs(arr[i] - arr[i + 1]) < min) {
             min = abs(arr[i] - arr[i + 1]);
             a = arr[i];
             b = arr[i + 1];
         }
     }
+    }
+    
 
     printf("%d %d\n", a, b);
     return 0;

@@ -8,7 +8,13 @@ int main(){
     }
     int target;
     scanf("%d",&target);
-    if(n==2){
+    int allsame=1;
+    for(int i=1;i<n;i++){
+        if(arr[i]!=arr[0]){
+            allsame=0;
+        }
+    }
+    if(allsame){
         printf("%d %d",arr[0],arr[1]);
     }else{ for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){

@@ -11,7 +11,7 @@ int main(){
     for(int i=0;i<n;i++){
         if(arr[i]<=arr[i+i]){
             inc=1;
-        }else if(arr[i]>=arr[i+i]){
+        }if(arr[i]>=arr[i+i]){
             dec=1;
         }
     }

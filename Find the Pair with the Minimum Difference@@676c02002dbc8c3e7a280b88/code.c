@@ -7,7 +7,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int a,b;
+    int a = arr[0], b = arr[1];
     int min = abs(arr[0] - arr[1]);
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){

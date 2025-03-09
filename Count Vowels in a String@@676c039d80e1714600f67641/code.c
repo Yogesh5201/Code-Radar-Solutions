@@ -6,7 +6,7 @@ int main(){
     int n=strlen(str);
     int count=0;
     for(int i=0;i<n;i++){
-        int a=str[i];
+        int a=str.lower(str[i]);
         if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'){
             count++;
     }

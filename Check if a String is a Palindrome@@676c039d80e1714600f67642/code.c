@@ -12,9 +12,9 @@ int main(){
     }
     rev[n] = '\0';
     if(strcmp(rev, str) == 0){
-        printf("YES");
+        printf("Yes");
     }else{
-        printf("NO");
+        printf("N");
     }
 
     

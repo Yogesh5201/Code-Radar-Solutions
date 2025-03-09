@@ -8,7 +8,9 @@ int main(){
     }
     int target;
     scanf("%d",&target);
-    for(int i=0;i<n;i++){
+    if(n=2){
+        printf("%d %d",arr[0],arr[1]);
+    }else{ for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==target){
                 
@@ -16,6 +18,7 @@ int main(){
                 
             }
         }
-    }
+    }}
+   
     return 0;
 }

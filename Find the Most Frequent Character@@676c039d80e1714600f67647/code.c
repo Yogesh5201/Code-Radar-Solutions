@@ -4,6 +4,7 @@ int main(){
     scanf("%[^\n]",str);
     int max=0;
     char mostfrequent
+    int n=strlen(str);
     for(int i=0;i<n;i++){
         if(str[i]==' ')continue;
         int count=0;
@@ -18,6 +19,6 @@ int main(){
         }
 
     }
-    printf("%s",mostfrequent)
+    printf("%s",mostfrequent);
     
 }

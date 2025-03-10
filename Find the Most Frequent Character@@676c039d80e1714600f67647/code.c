@@ -3,6 +3,9 @@
 int main(){
     char str[100];
     scanf("%[^\n]",str);
+    int max=0;
+    char mostfrequent;
+    int n=strlen(str);
     for(int i = 0; i < n - 1; i++) {
         for(int j = 0; j < n - i - 1; j++) {
             if(str[j] < str[j + 1]) {
@@ -13,9 +16,7 @@ int main(){
         }
     }
 
-    int max=0;
-    char mostfrequent;
-    int n=strlen(str);
+    
     for(int i=0;i<n;i++){
         if(str[i]==' ')continue;
         int count=0;

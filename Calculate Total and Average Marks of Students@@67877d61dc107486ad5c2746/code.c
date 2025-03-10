@@ -17,6 +17,6 @@ int main(){
         
 }
 
-printf("Total Marks: %d",marks);
+printf("Total Marks: %d\n",marks);
 printf("Average Marks: %.2f",marks/n);
 }

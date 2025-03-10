@@ -3,7 +3,7 @@ int main(){
     char str[100];
     scanf("%[^\n]",str);
     int max=0;
-    char mostfrequent
+    char mostfrequent;
     int n=strlen(str);
     for(int i=0;i<n;i++){
         if(str[i]==' ')continue;

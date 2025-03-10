@@ -10,11 +10,12 @@ int main(){
     struct student students[n];
     int count=0;
     int a=0;
-    float threshold;
-    scanf("%f",&threshold);
+    
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&students[i].rollNumber,&students[i].name,&students[i].marks);
     }
+    float threshold;
+    scanf("%f",&threshold);
     for(int i=0;i<n;i++){
         if(students[i].marks>threshold){
             count++;    

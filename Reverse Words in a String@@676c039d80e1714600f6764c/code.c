@@ -12,7 +12,7 @@ int main(){
     }
     for(int i=0;i<=a/2;i++){
         char temp=str[n/2-i];
-        str[n/2-1]=str[i];
+        str[n/2-i]=str[i];
         str[i]=temp;
     }
     

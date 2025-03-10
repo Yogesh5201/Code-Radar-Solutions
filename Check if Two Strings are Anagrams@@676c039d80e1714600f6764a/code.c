@@ -16,7 +16,7 @@ int main(){
         }
     }
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
+        for(int j=0;j<n-i-1;j++){
             if(str2[j]>str2[j+1]){
                 int temp=str2[j+1];
                 str2[j+1]=str2[j];

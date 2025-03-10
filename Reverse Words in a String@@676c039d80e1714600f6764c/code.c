@@ -15,11 +15,7 @@ int main(){
         str[n/2-i-1]=str[i];
         str[i]=temp;
     }
-    for(int i=a/2;i>=0;i--){
-        char temp=str[n/2-i-1];
-        str[n/2-i-1]=str[i];
-        str[i]=temp;
-    }
+    
     
     
     printf("%s",str);

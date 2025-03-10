@@ -15,6 +15,11 @@ int main(){
         str[a-i-1]=str[i];
         str[i]=temp;
     }
+    for(int i=a/2;i>=0;i--){
+        char temp=str[a-i-1];
+        str[a-i-1]=str[i];
+        str[i]=temp;
+    }
     
     
     

@@ -3,8 +3,8 @@
 int main(){
     char str1[100];
     char str2[100];
-    scanf("%[^\n]",str1);
-    scanf("%[^\n]",str2);
+    scanf("%s",str1);
+    scanf("%s",str2);
     int n=strlen(str1);
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){

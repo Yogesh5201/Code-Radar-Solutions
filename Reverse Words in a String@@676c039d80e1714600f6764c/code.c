@@ -11,7 +11,7 @@ int main(){
         }
     }
     for(int i=0;i<=a/2;i++){
-        str[i]=str[n/2-i];
+        str[i]=str[n/2-i-1];
     }
     
     printf("%s",str);

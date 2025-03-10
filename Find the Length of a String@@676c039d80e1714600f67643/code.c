@@ -4,7 +4,7 @@ int main(){
     scanf("%s",str);
     int i=0;
     int count=0;
-    while(str[i]=='\n'){
+    while(str[i]!='\n'){
         count++;
         i++;
     }

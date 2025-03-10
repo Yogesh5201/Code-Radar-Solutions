@@ -22,5 +22,5 @@ int main(){
         }
         
     }
-    printf("Count os students scoring above %.2f: %d",threshold,count);
+    printf("Count of students scoring above %.2f: %d",threshold,count);
 }

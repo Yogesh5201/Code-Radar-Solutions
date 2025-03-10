@@ -5,7 +5,7 @@ int main(){
     char str2[100];
     scanf("%[^\n]",str1);
     scanf("%[^\n]",str2);
-    int n=strlen(str);
+    int n=strlen(str1);
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(str1[j]>str1[j+1]){

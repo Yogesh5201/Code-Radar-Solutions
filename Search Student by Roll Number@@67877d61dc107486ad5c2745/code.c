@@ -13,7 +13,7 @@ int main(){
         scanf("%d %s %f",&students[i].rollNumber,&students[i].name,&students[i].marks);
     }
     for(int i=0;i<n;i++){
-        if(students[i].marks==a){
+        if(students[i].rollNumber==a){
             printf("Roll Number: %d, Name: %s, Marks: %.2f\n",students[i].rollNumber,students[i].name,students[i].marks);
         }else{
             printf("Student not found");

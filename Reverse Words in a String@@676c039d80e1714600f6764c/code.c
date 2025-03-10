@@ -11,8 +11,8 @@ int main(){
         }
     }
     for(int i=0;i<a/2;i++){
-        char temp=str[a/2-i];
-        str[a/2-i]=str[i];
+        char temp=str[n/2-i-1];
+        str[n/2-i-1]=str[i];
         str[i]=temp;
     }
     for(int i=a/2+1;i>=0;i--){

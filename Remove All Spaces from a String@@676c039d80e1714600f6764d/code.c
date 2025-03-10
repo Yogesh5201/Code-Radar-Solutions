@@ -9,6 +9,8 @@ int main(){
             for(int j = i; j < n; j++){
                 str[j] = str[j + 1];
             }
+            n--;
+            i--;
         }
     }
     printf("%s",str);

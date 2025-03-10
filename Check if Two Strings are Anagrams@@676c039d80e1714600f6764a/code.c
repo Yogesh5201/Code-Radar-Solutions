@@ -26,7 +26,7 @@ int main(){
     }
     int anagram=1;
     for(int i=0;i<n;i++){
-        if(str[i]!=str[j]){
+        if(str1[i]!=str2[i]){
             anagram=0;
         }
     }

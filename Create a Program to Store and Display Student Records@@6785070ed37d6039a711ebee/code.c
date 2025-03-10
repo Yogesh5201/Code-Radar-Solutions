@@ -9,9 +9,9 @@ int main(){
     scanf("%d",&n);
     struct student students[n];
     for(int i=0;i<n;i++){
-        scanf("%d %s %f",&student[i].rollNumber,&student[i].name,&student[i].marks);
+        scanf("%d %s %f",&students[i].rollNumber,&students[i].name,&students[i].marks);
     }
     for(int i=0;i<n;i++){
-        printf("%d %s %f",student[i].rollNumber,student[i].name,student[i].marks);
+        printf("%d %s %f",students[i].rollNumber,students[i].name,students[i].marks);
     }
 }

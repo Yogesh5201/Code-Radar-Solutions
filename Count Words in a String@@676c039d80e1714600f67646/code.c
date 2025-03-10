@@ -7,9 +7,9 @@ int main(){
     int inWord=0;
     for(int i=0;i<strlen(str);i++){
       if(str[i]=' '){
-        inword=0;
-      }else if(!inword){
-        inword=1;
+        inWord=0;
+      }else if(!inWord){
+        inWord=1;
         count++;
       }
     

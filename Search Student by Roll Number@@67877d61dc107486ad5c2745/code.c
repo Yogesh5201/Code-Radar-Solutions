@@ -20,4 +20,4 @@ int main(){
         }
         
 }
-printf("Average Marks: %.2f",marks/n);}
+}

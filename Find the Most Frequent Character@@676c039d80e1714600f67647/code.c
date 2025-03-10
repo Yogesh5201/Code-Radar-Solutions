@@ -19,7 +19,11 @@ int main(){
             mostfrequent=str[i];
         }
 
+    }if(max==0){
+        printf("%c",str[0]);
+    }else{
+        printf("%c",mostfrequent);
     }
-    printf("%c",mostfrequent);
+  
     
 }

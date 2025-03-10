@@ -6,7 +6,7 @@ int main(){
     int max=0;
     char mostfrequent;
     int n=strlen(str);
-    for(int i=n-1;i<=0;i--){
+    for(int i=n-1;i>=0;i--){
         if(str[i]==' ')continue;
         int count=0;
         for(int j=0;j<n;j++){

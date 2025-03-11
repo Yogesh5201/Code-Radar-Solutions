@@ -13,7 +13,7 @@ int main() {
         totalTemp += week[i].temperature;
     }
     float avgTemp = totalTemp / 7;
-    printf("%.2f\n", avgTemp);
+    printf("Average Temperature: %.2f\n", avgTemp);
 
     return 0;
 }

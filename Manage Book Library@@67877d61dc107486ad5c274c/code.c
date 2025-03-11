@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Define the Book structure
 typedef struct {
     char title[100];
     char author[100];
@@ -22,7 +21,6 @@ int main() {
 
     Book books[n];
 
-    // Read book details
     for (int i = 0; i < n; i++) {
         scanf("%s %s %f", books[i].title, books[i].author, &books[i].price);
     }

@@ -11,7 +11,9 @@ int main(){
         scanf("%d %d",&rectangles[i].length,&rectangles[i].breadth);
     }
     for(int i=0;i<n;i++){
-        printf("Rectangle %d: Area = %d, Perimeter = %d",i+1,2(rectangles[i].length+rectangles[i].breadth),rectangles[i].length*rectangles[i].breadth);
+        int l=rectangles[i].length;
+        int b=rectangles[i].breadth;
+        printf("Rectangle %d: Area = %f, Perimeter = %f",i+1,2(l+b),l+b);
     }
     
 }

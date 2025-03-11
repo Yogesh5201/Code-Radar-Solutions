@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 typedef struct vehicle{
     char number[50];
     char type[50];
@@ -16,13 +17,13 @@ int main(){
     float truck_toll=0;
     float bike_toll=0;
     for(int i=0;i<n;i++){
-        if(vehicles[i].type=='Car'){
+        if(strcmp(vehicles[i].type=='Car')){
             car_toll+=vehicles[i].toll;
         }
-        elif(vehicles[i].type=='Truck'){
+        else if(strcmp(vehicles[i].type=='Truck')){
             truck_toll+=vehicles[i].toll;
         }
-        elif(vehicles[i].type=='Bike'){
+        else if(strcmp(vehicles[i].type=='Bike')){
             bike_toll+=vehicles[i].toll;
         }
     }

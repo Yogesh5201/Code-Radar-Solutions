@@ -16,7 +16,9 @@ int main(){
       int min=students[0].marks;
     for(int i=0;i<n;i++){
         if(students[i].marks<min){
-            students[i]=students[0];
+            struct student temp=students[0];
+            students[0]=students[i];
+            students[i]=temp;
             
         }
         

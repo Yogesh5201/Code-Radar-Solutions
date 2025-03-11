@@ -9,7 +9,7 @@ typedef struct movie{
 int main(){
     int n;
     scanf("%d",&n);
-    v vehicles[100];
+    m movies[100];
     for(int i=0;i<n;i++){
         scanf("%s %s %d",&movies[i].name,&movies[i].type,&movies[i].price);
     }

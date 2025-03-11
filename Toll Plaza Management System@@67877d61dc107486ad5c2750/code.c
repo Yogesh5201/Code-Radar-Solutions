@@ -11,7 +11,7 @@ int main(){
     scanf("%d",&n);
     v vehicles[100];
     for(int i=0;i<n;i++){
-        scanf("%s %s %d",&vehicles[i].number,&vehicles[i].type,&vehicles[i].amount);
+        scanf("%s %s %d",&vehicles[i].number,&vehicles[i].type,&vehicles[i].toll);
     }
     float car_toll=0;
     float truck_toll=0;

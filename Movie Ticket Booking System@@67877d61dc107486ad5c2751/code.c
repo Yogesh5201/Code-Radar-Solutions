@@ -7,7 +7,7 @@ typedef struct movie{
 
 }m;
 int main(){
-    int m;
+    int n;
     scanf("%d",&n);
     v vehicles[100];
     for(int i=0;i<n;i++){
@@ -27,6 +27,6 @@ int main(){
             vip_price+=movies[i].price;
         }
     }
-    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f",car_toll,truck_toll,bike_toll);
+    printf("Standard: %.2f, Premium: %.2f, VIP: %.2f",std_price,pr_price,vip_price);
 
 }

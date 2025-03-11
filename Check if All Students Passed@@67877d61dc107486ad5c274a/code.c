@@ -24,7 +24,7 @@ int main(){
     if(count==n){
         printf("All Passed");
     }
-    elsse{
+    else{
         printf("Not All Passed");
     }
     

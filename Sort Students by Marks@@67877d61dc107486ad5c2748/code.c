@@ -13,7 +13,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&students[i].rollNumber,&students[i].name,&students[i].marks);
     }
-      int min=students[0].marks;
+      float min=students[0].marks;
     for(int i=0;i<n;i++){
         if(students[i].marks<min){
             struct student temp=students[0];

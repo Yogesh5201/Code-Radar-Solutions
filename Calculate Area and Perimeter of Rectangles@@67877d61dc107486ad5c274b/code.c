@@ -13,7 +13,7 @@ int main(){
     for(int i=0;i<n;i++){
         int l=rectangles[i].length;
         int b=rectangles[i].breadth;
-        printf("Rectangle %d: Area = %d, Perimeter = %d\n",i+1,l*b,2*(l+b));
+        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n",i+1,l*b,2*(l+b));
     }
     
 }

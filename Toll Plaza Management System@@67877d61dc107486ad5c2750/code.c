@@ -3,7 +3,7 @@
 typedef struct vehicle{
     char number[50];
     char type[50];
-    int  amount;
+    int  toll;
 
 }v;
 int main(){

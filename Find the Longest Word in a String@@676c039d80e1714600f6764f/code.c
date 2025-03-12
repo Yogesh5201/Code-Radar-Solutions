@@ -5,6 +5,10 @@ int main(){
     scanf("%[^\n]",str);
     char word1[30] ,word2[30],word3[30],word4[30];
     sscanf(str,"%s %s %s %s",word1,word2,word3,word4);
+    int count = sscanf(str, "%s %s %s", word1, word2, word3);
+    if (count < 3) word3[0] = '\0';
+    if (count < 2) word2[0] = '\0';
+    if (count < 1) word1[0] = '\0';
     int n1=strlen(word1);
     int n2=strlen(word2);
     int n3=strlen(word3);

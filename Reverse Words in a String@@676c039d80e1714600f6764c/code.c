@@ -15,7 +15,7 @@ int main(){
     for(int i=0;i<n1;i++){
         char temp=word1[a-i-1];
         word1[a-i-1]=word1[i];
-        word[i]=temp;
+        word1[i]=temp;
     }
     for(int i=a+1;i<n/2;i++){
         char temp=word2[n-i-1];

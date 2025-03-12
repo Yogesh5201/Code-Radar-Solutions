@@ -8,7 +8,7 @@ int main() {
     scanf(" %c",&k);
 
     for (int i = 0; str[i] != '\0'; i++) {
-        char m=str[i];
+        char m=islower(str[i]);
         if(m=='a'||m=='e'||m=='i'||m=='o'||m=='u'){
             str[i]=k;
         }

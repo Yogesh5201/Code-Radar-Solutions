@@ -4,9 +4,9 @@ int main(){
     char str[100];
     scanf("%[^\n]",str);
     char word1[30] ,word2[30],word3[30];
-    n1=strlen(word1);
-    n2=strlen(word2);
-    n3=strlen(word3);
+    int n1=strlen(word1);
+    int n2=strlen(word2);
+    int n3=strlen(word3);
     if(n1>n2 && n1>n3){
         printf("%s",word1);
     }

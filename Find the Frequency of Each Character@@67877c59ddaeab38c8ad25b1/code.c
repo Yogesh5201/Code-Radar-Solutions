@@ -12,6 +12,6 @@ int main(){
                 count++;
             }
             
-        }printf("%s: %d",str[i],count);
+        }printf("%c: %d",str[i],count);
     }
 }

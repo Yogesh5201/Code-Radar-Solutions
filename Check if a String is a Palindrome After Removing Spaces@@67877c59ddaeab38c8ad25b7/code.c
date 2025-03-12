@@ -7,7 +7,7 @@ int main() {
     int j = 0;
     for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] != ' ') {
-            cleaned[j++] = str[i];
+            cleaned[j++] = tolower(str[i]);
         }
     }
     cleaned[j] = '\0'; 

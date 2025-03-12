@@ -16,7 +16,7 @@ int binarySearch(int arr[], int n,int k) {
         if(arr[i]==k){
             a=i;
             found=1;
-        }else if(arr[i]==arr[i+1]){
+        }if(arr[i]==arr[i+1]){
             return 3;
         }
     }

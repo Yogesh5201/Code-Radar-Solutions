@@ -4,8 +4,7 @@
 int main() {
     char str[1000];
     int letters[26] = {0}, count = 0;
-    
-    scanf("%[^\n]", str); // Read input with spaces
+    scanf("%[^\n]", str); 
 
     for (int i = 0; str[i] != '\0'; i++) {
         if (isalpha(str[i])) {
@@ -16,7 +15,6 @@ int main() {
             }
         }
     }
-
     printf(count == 26 ? "Yes\n" : "No\n");
 
     return 0;

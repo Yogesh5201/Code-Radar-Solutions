@@ -1,16 +1,23 @@
-#include<stdio.h>
-#include<string.h>
-#include<ctype.h>
-int main(){
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
     char str[100];
-    scanf("%[^n],str");
-    int n=strlen(str);
-    char alphabets[]="abcdefghijklmnopqrstuvwxyz";
-    if(strstr(alphabets,str)){
-        printf("Yes");
-    }else{
-        printf("No");
+    scanf("%[^\n]", str); 
+    char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
+    int flag = 1;
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (!strchr(alphabets, tolower(str[i]))) {  
+            flag = 0; 
+            break;
+        }
     }
-    
-    
+    if (flag) {
+        printf("Yes\n");
+    } else {
+        printf("No\n"); 
+    }
+
+    return 0;
 }

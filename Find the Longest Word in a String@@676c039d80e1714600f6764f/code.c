@@ -19,6 +19,6 @@ int main(){
         printf("%s",word3);
     }
     else if(n4>n1 && n4>n2 && n4>n3){
-        printf("%s",word3);
+        printf("%s",word4);
     }
 }

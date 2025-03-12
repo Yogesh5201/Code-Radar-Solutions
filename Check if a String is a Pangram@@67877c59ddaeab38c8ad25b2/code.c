@@ -1,22 +1,23 @@
 #include <stdio.h>
-#include <string.h>
 #include <ctype.h>
 
 int main() {
-    char str[100];
-    scanf("%[^\n]", str); 
-    int flag = 1;
+    char str[1000];
+    int letters[26] = {0}, count = 0;
+    
+    scanf("%[^\n]", str); // Read input with spaces
+
     for (int i = 0; str[i] != '\0'; i++) {
-        if (!isalpha(str[i])&&str[i] != ' ') {  
-            flag = 0; 
-            break;
+        if (isalpha(str[i])) {
+            int index = tolower(str[i]) - 'a'; 
+            if (!letters[index]) { 
+                letters[index] = 1;
+                count++;
+            }
         }
     }
-    if (flag) {
-        printf("Yes\n");
-    } else {
-        printf("No\n"); 
-    }
+
+    printf(count == 26 ? "Yes\n" : "No\n");
 
     return 0;
 }

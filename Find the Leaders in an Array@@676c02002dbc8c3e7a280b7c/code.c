@@ -8,7 +8,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    max = arr[n - 1]; 
+    max = arr[n - 1]; // Last element is always a leader
     printf("%d ", max);
 
     for (i = n - 2; i >= 0; i--) {

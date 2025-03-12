@@ -1,27 +1,37 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
+#include <stdio.h>
+#include <string.h>
+
+int main() {
     char str[100];
-    scanf("%[^\n]",str);
-    int n=strlen(str);
-    int a=0;
-    for(int i=0;i<n;i++){
-        if(str[i]==' '){
-             a=i;
+    scanf("%[^\n]", str); 
+
+    int n = strlen(str);
+    int a = -1, b = -1;
+    for (int i = 0; i < n; i++) {
+        if (str[i] == ' ') {
+            if (a == -1) {
+                a = i;  
+            }
         }
     }
-    for(int i=0;i<a/2;i++){
-        char temp=str[a-i-1];
-        str[a-i-1]=str[i];
-        str[i]=temp;
+    if (a == -1) {
+        a = n;
+        b = -1;
     }
-    for(int i=a+1;i<n/2;i++){
-        char temp=str[n-i-1];
-        str[n-i-1]=str[i];
-        str[i]=temp;
+
+    for (int i = 0, j = a - 1; i < j; i++, j--) {
+        char temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
     }
-    
-    
-    
-    printf("%s",str);
+    if (b != -1) {
+        for (int i = b + 1, j = n - 1; i < j; i++, j--) {
+            char temp = str[i];
+            str[i] = str[j];
+            str[j] = temp;
+        }
+    }
+
+    printf("%s", str);
+    return 0;
 }

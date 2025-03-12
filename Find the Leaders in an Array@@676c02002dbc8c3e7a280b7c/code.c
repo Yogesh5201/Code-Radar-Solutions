@@ -9,7 +9,7 @@ int main() {
         scanf("%d", &arr[i]);
 
     for (i = n - 1; i >= 0; i--) {
-        if (arr[i] > max) {
+        if (arr[i] >= max) {
             max = arr[i];
             leaders[count++] = max;
         }

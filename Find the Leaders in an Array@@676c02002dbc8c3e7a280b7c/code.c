@@ -1,28 +1,23 @@
 #include <stdio.h>
 
-void findLeaders(int arr[], int n) {
-    int maxFromRight = arr[n - 1];
-    printf("%d ", maxFromRight);
-
-    for (int i = n - 2; i >= 0; i--) {
-        if (arr[i] >= maxFromRight) {
-            maxFromRight = arr[i];
-            printf("%d ", maxFromRight);
-        }
-    }
-    printf("\n");
-}
-
 int main() {
-    int n;
+    int n, arr[100], i, max;
     scanf("%d", &n);
 
-    int arr[n];
-    for (int i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    findLeaders(arr, n);
+    max = arr[n - 1]; 
+    printf("%d ", max);
+
+    for (i = n - 2; i >= 0; i--) {
+        if (arr[i] > max) {
+            max = arr[i];
+            printf("%d ", max);
+        }
+    }
 
     return 0;
 }
+

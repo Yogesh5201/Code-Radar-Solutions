@@ -3,13 +3,12 @@
 
 int main() {
     char str[100];
-    scanf("%s", str); // Read input string
-    
+    scanf("%s", str); 
     int len = strlen(str);
-    int start = 0, maxLen = 1; // Store longest palindrome position
+    int start = 0, maxLen = 1;
 
     for (int i = 0; i < len; i++) {
-        int l = i, r = i; // Odd-length palindromes
+        int l = i, r = i;
         while (l >= 0 && r < len && str[l] == str[r]) {
             if (r - l + 1 > maxLen) {
                 start = l;
@@ -18,8 +17,7 @@ int main() {
             l--;
             r++;
         }
-
-        l = i, r = i + 1; // Even-length palindromes
+        l = i, r = i + 1;
         while (l >= 0 && r < len && str[l] == str[r]) {
             if (r - l + 1 > maxLen) {
                 start = l;
@@ -29,9 +27,8 @@ int main() {
             r++;
         }
     }
-
     for (int i = start; i < start + maxLen; i++) {
-        printf("%c", str[i]); // Print the longest palindrome
+        printf("%c", str[i]);
     }
     
     return 0;

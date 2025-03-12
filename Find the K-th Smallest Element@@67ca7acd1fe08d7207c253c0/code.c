@@ -11,7 +11,7 @@ int kthSmallest(int arr[], int n,int k) {
         arr[i] = arr[minIndex];
         arr[minIndex] = temp;
     }
-    if(arr[k-1]!=0){
+    if(k<n-1){
         return arr[k-1];
     }else{
         return -1;

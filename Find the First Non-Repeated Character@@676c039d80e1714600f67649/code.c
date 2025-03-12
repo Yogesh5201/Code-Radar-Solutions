@@ -7,7 +7,6 @@ int main() {
     char str[100];
     int count[MAX_CHAR] = {0};
 
-    printf("Enter a string: ");
     scanf("%s", str);
 
     int len = strlen(str);

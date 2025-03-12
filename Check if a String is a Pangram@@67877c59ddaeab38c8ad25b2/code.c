@@ -5,7 +5,6 @@
 int main() {
     char str[100];
     scanf("%[^\n]", str); 
-    char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
     int flag = 1;
     for (int i = 0; str[i] != '\0'; i++) {
         if (!isalpha(str[i])&&str[i] != ' ') {  

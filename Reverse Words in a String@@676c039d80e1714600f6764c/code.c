@@ -1,37 +1,29 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
+int main(){
 
-int main() {
-    char str[100];
-    scanf("%[^\n]", str); 
+    char str[100]; 
+    scanf("%[^\n]",str);
+    char word1[20], word2[20];
 
-    int n = strlen(str);
-    int a = -1, b = -1;
-    for (int i = 0; i < n; i++) {
-        if (str[i] == ' ') {
-            if (a == -1) {
-                a = i;  
-            }
-        }
-    }
-    if (a == -1) {
-        a = n;
-        b = -1;
-    }
+    sscanf(str, "%s %s", word1, word2);
 
-    for (int i = 0, j = a - 1; i < j; i++, j--) {
-        char temp = str[i];
-        str[i] = str[j];
-        str[j] = temp;
+    int n1=strlen(word1);
+    int n2=strlen(word2);
+    int a=0;
+   
+    for(int i=0;i<n1;i++){
+        char temp=word1[a-i-1];
+        word1[a-i-1]=word1[i];
+        word[i]=temp;
     }
-    if (b != -1) {
-        for (int i = b + 1, j = n - 1; i < j; i++, j--) {
-            char temp = str[i];
-            str[i] = str[j];
-            str[j] = temp;
-        }
+    for(int i=a+1;i<n/2;i++){
+        char temp=word2[n-i-1];
+        word2[n-i-1]=word2[i];
+        word2[i]=temp;
     }
-
-    printf("%s", str);
-    return 0;
+    
+    
+    
+    printf("%s %s",word1,word2);
 }

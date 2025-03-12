@@ -1,28 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_CHAR 256
-
 int main() {
     char str[100];
-    int count[MAX_CHAR] = {0};
-
     scanf("%s", str);
-
     int len = strlen(str);
-
+    
     for (int i = 0; i < len; i++) {
-        count[(unsigned char)str[i]]++;
-    }
-    char result = '-';
-    for (int i = 0; i < len; i++) {
-        if (count[(unsigned char)str[i]] == 1) {
-            result = str[i];
-            break;
+        int isUnique = 1;
+        for (int j = 0; j < len; j++) {
+            if (i != j && str[i] == str[j]) { 
+                isUnique = 0;
+                break;
+            }
+        }
+        if (isUnique) {
+            printf("%c\n", str[i]); 
+            return 0;
         }
     }
-
-    printf("%c\n", result);
-
+    printf("-\n"); 
     return 0;
 }

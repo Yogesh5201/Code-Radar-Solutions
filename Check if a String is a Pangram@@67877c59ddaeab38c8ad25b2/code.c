@@ -8,7 +8,7 @@ int main() {
     char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
     int flag = 1;
     for (int i = 0; str[i] != '\0'; i++) {
-        if (!strchr(alphabets, tolower(str[i]))) {  
+        if (!strchr(alphabets, tolower(str[i]))&&str[i] != ' ') {  
             flag = 0; 
             break;
         }

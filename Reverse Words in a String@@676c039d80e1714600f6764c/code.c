@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    char str[100],word1[],word2[];
+    char str[100],word1[30],word2[30];
     sscanf(str,word1,word2);
     n1=strlen(word1);
     n2=strlen(word2);

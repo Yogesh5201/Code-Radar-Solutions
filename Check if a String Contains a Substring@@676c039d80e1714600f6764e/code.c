@@ -8,7 +8,7 @@ int main(){
    if(strstr(str,word)!=NULL){
     printf("Yes");
    }
-} else {
+ else {
     printf("No");
 }
 

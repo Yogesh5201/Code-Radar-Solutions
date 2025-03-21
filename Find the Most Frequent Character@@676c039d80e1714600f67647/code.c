@@ -1,28 +1,23 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
+#include <stdio.h>
+#include <string.h>
+
+int main() {
     char str[100];
-    scanf("%[^\n]",str);
-    int freq[100];
-    int n=strlen(str);
-    for(int i=0;i<n;i++){
-        int count=0;
-        for(int j=0;j<n;j++){
-            if(str[i]==str[j]){
-                count++;
-            }
-        }freq[i]=count;
+    int freq[256] = {0}; 
+    char maxChar;
+    int maxFreq = 0;
+
+    scanf(" %[^\n]", str);
+    for (int i = 0; str[i]; i++) {
+        freq[(unsigned char)str[i]]++;  
     }
-    int max=freq[0];
-    int a=0;
-    for(int i=0;i<n;i++){
-        if(freq[i]>max){
-            max=freq[i];
-             a=i;
+    for (int i = 0; str[i]; i++) {
+        if (freq[(unsigned char)str[i]] > maxFreq) {
+            maxFreq = freq[(unsigned char)str[i]];
+            maxChar = str[i];
         }
     }
-    printf("%c",str[a]);
 
-    
-    
+    printf("%c\n", maxChar);
+    return 0;
 }

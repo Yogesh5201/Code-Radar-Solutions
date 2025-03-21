@@ -9,7 +9,7 @@ int main(){
     for(int i=n-1;i>=0;i--){
        rev[i]=str[n-i-1];
     }
-    if(strcmp(str,rev)==0){
+    if(strcmp(rev,str)==0){
         printf("Yes");
     }else{
         printf("No");

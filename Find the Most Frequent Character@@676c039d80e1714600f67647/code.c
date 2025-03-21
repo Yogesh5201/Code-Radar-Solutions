@@ -16,7 +16,7 @@ int main(){
     int max=freq[0];
     int a=0;
     for(int i=0;i<n;i++){
-        if(freq[i]>=max){
+        if(freq[i]>max){
             max=freq[i];
              a=i;
         }

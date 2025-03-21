@@ -6,7 +6,8 @@ int main(){
     int n=strlen(str);
     int count=0;
     for(int i=0;i<n;i++){
-        if(str[i]==' '){
+       if (str[i] != ' ' && (i == 0 || str[i - 1] == ' ')) {
+
             count++;
         }
     }printf("%d",count);

@@ -9,7 +9,7 @@ int main() {
 
     scanf(" %[^\n]", str);
     for (int i = 0; str[i]; i++) {
-        if (str[i] != ' ') { 
+        if (str[i] != ' ') {  
             freq[(unsigned char)str[i]]++;  
         }
     }

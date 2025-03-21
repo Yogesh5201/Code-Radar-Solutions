@@ -3,8 +3,8 @@
 int main(){
     char str[100],word1[30],word2[30];
     sscanf(str,word1,word2);
-    n1=strlen(word1);
-    n2=strlen(word2);
+    int n1=strlen(word1);
+    int n2=strlen(word2);
     for(int i=0;i<n1;i++){
         char temp=word1[i];
         word1[i]=word1[n1-i-1];

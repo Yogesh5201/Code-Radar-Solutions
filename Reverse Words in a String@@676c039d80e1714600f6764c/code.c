@@ -9,7 +9,7 @@ int main(){
     for(int i=0;i<n1;i++){
         char temp=word1[i];
         word1[i]=word1[n1-i-1];
-        word1[n1-1-1]=temp;
+        word1[n1-i-1]=temp;
     }
     for(int i=0;i<n2;i++){
         char temp=word2[i];

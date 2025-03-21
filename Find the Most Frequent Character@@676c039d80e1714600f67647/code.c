@@ -1,25 +1,25 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    int n, i, j, maxFreq = 0, result;
-    scanf("%d", &n);
-    int arr[n];
+    char str[101];
+    int freq[256] = {0};
+    char maxChar = '\0';
+    int maxFreq = 0;
 
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    for (i = 0; i < n; i++) {
-        int count = 0;
-        for (j = 0; j < n; j++) {
-            if (arr[i] == arr[j]) count++;
-        }
-        if (count > maxFreq || (count == maxFreq && arr[i] < result)) {
-            maxFreq = count;
-            result = arr[i];
+    scanf("%[^\n]", str);
+    for (int i = 0; str[i]; i++) {
+        if (str[i] != ' ') { 
+            freq[(unsigned char)str[i]]++;
         }
     }
+    for (int i = 0; i < 256; i++) {
+        if (freq[i] > maxFreq) {
+            maxFreq = freq[i];
+            maxChar = (char)i;
+        }
+    }
 
-    printf("%c\n", result);
+    printf("%c\n", maxChar);
     return 0;
 }

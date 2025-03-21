@@ -21,7 +21,7 @@ int main(){
              a=i;
         }
     }
-    printf("%d",str[a]);
+    printf("%c",str[a]);
 
     
     

@@ -6,7 +6,7 @@ scanf("%[^\n]",str);
 int n=strlen(str);
 int count=0;
 for(int i=0;i<n;i++){
-    char a=atr[i];
+    char a=str[i];
     if(a=='a'||a=='e'||a=='i'||a='o'||a=='u'){
         count++;
     }

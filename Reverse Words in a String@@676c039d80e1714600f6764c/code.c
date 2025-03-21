@@ -14,7 +14,7 @@ int main(){
     for(int i=0;i<n2;i++){
         char temp=word2[i];
         word2[i]=word2[n2-i-1];
-        word2[n2-1-1]=temp;
+        word2[n2-i-1]=temp;
     }
     printf("%s %s",word1,word2);
 }

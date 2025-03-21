@@ -5,7 +5,7 @@ int main(){
     scanf("%[^\n]",str);
     int n=strlen(str);
     int count=0;
-    for(int i=1;i<n;i++){
+    for(int i=1;i<n-1;i++){
         if(str[i]==' '){
             count++;
         }

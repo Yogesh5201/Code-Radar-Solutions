@@ -6,7 +6,7 @@ int main(){
     char rev[100];
     scanf("%[^\n]",str);
     int n=strlen(str);
-    for(int i=n-1;i<=0;i--){
+    for(int i=n-1;i>=0;i--){
        rev[i]=str[n-i-1];
     }
     if(strcmp(str,rev)==0){

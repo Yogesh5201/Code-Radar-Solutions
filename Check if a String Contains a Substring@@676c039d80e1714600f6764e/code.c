@@ -5,8 +5,9 @@ int main(){
     scanf("%[^\n]",str);
     char word[30];
     scanf("%s",word);
-   if (strstr(str, word) != NULL) {
+   if(strstr(str,word)!=NULL){
     printf("Yes");
+   }
 } else {
     printf("No");
 }

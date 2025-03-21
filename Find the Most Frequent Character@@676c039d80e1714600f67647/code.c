@@ -14,10 +14,11 @@ int main(){
         }freq[i]=count;
     }
     int max=freq[0];
+    int a=0;
     for(int i=0;i<n;i++){
         if(freq[i]>=max){
             max=freq[i];
-            int a=i;
+             a=i;
         }
     }
     printf("%d",str[a]);

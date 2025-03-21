@@ -14,7 +14,7 @@ int main() {
         }
     }
     for (int i = 0; str[i]; i++) {
-        if (str[i] != ' ' && freq[(unsigned char)str[i]] > maxFreq) {
+        if (str[i] != ' ' && freq[(unsigned char)str[i]] >= maxFreq) {
             maxFreq = freq[(unsigned char)str[i]];
             maxChar = str[i];
         }

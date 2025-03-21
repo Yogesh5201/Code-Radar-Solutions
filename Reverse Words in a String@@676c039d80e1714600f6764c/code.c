@@ -2,6 +2,7 @@
 #include<string.h>
 int main(){
     char str[100],word1[30],word2[30];
+    scanf("%[^\n]",str);
     sscanf(str,word1,word2);
     int n1=strlen(word1);
     int n2=strlen(word2);

@@ -9,5 +9,5 @@ int main(){
         if(str[i]==' '){
             count++;
         }
-    }printf("%d",count+1);
+    }printf("%d",count);
 }

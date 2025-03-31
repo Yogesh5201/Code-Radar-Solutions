@@ -10,6 +10,7 @@ int main(){
     if(arr[i]==0){
         for(int j=i;j<n-1;j++){
             arr[j]=arr[j+1];
+            arr[n-i]=0;
         }
     }
    }

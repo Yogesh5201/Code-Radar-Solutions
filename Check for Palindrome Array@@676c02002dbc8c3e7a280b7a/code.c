@@ -2,23 +2,22 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int arr1[n],arr2[n];
+    int arr[n],arr1[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&arr1[i]);
+        scanf("%d",&arr[i]);
     }
-    for(int i=n-1;i>=0;i--){
-        arr2[n-i-1]=arr1[i];
-    }
-    int equal=1;
     for(int i=0;i<n;i++){
-        if(arr1[i]!=arr2[i]){
-            equal=0;
+        arr1[n-i-1]=arr[i];
+    }
+    int palindrome=1;
+    for(int i=0;i<n;i++){
+        if(arr1[i]!=arr[i]){
+            palindrome=0;
         }
     }
-    if(equal){
-        printf("YES");
+    if(palindrome){
+        printf("Yes");
     }else{
-        printf("NO");
+        printf("No");
     }
-    return 0;
 }

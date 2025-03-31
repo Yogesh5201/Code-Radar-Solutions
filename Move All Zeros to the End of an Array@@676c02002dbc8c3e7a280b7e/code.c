@@ -8,12 +8,13 @@ int main(){
     }
    for(int i=0;i<n;i++){
     if(arr[i]==0){
+        int a=1;
         for(int j=i;j<n-1;j++){
-            int a=1;
+            
             arr[j]=arr[j+1];
             arr[n-a]=0;
-            a++;
-        }
+            
+        }a++;
     }
    }
     for(int i=0;i<n;i++){

@@ -6,18 +6,14 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int index=0;
-    for(int i=0;i<n;i++){
-        if (arr[i]!=0){
-           arr[index]=arr[i];
-           index++;
+   for(int i=0;i<n;i++){
+    if(arr[i]==0){
+        for(int j=i;j<n-1;j++){
+            arr[j]=[j+1];
         }
     }
-    while(index<n){
-        arr[index]=0;
-        index++;
-    }
+   }
     for(int i=0;i<n;i++){
-       printf("%d ",arr[i]);
+        printf("%d",arr[i]);
     }
 }
